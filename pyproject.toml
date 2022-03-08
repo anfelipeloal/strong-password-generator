@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "strong-password-generator"
+version = "0.1.0"
+description = ""
+authors = ["Andres Londoño <andres.londono@morningstar.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate = "src.strong_password_generator.main:generate_password"
+search = "src.strong_password_generator.main:searhc_password"
